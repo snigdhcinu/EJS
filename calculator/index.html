@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calculator app</title>
+</head>
+<body>
+	<form method="POST" target="/">
+		<input type="number" name="operand1" placeholder="operand1">
+		<input type="text" name="operator" placeholder="operator" list="operators">
+		<input type="number" name="operand2" placeholder="operand2">
+		<button type="submit">Calculate</button>
+	</form>
+	<datalist id="operators">
+		<option value='/'></option>
+		<option value="*"></option>
+		<option value="-"></option>
+		<option value="+"></option>
+		<option value="%"></option>
+
+	</datalist>
+</body>
+</html>
