@@ -2,15 +2,17 @@
 <html>
 <head>
 	<title>calculator app</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-<h1>This is the pre calculation page</h1>
+	<div id="container">
 	<form method="POST" target="/">
 		<input type="number" name="operand1" placeholder="operand1">
 		<input type="text" name="operator" placeholder="operator" list="operators">
 		<input type="number" name="operand2" placeholder="operand2">
 		<button type="submit">Calculate</button>
 	</form>
+
 	<datalist id="operators">
 		<option value='/'></option>
 		<option value="*"></option>
@@ -19,8 +21,12 @@
 		<option value="%"></option>
 
 	</datalist>
+	</div>
 	<div id="result">
+		<% if(result!='null'){ %>
 		<h1>The sum of <%=x%> <%=op%> <%=y%> is <%=result%></h1>
+		<%}%>
+
 	</div>
 </body>
 </html>

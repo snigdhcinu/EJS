@@ -16,12 +16,10 @@ let operator;
 
 app.get('/',function(req,res){
 	if(result!='null'){
-	// res.write(`<h1>the result is :- ${result}</h1>`)
-	// res.write(`<h1>the first no. is :- ${num1}</h1>`)
-	// res.send();
 	res.render('index',{x:num1, y:num2, op:operator, result:result})
 }
-	res.sendFile(__dirname+'/index.html');
+	// res.sendFile(__dirname+'/index.html');
+	res.render('index',{x:num1, y:num2, op:operator, result:result})
 });
 
 app.post('/',function(req,res){

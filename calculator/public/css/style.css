@@ -1,0 +1,44 @@
+body{
+	background-image:  linear-gradient(25deg,#cffffe 50%,#f9f7d9 50%);
+	min-height: 100vh;
+	text-align: center;
+}
+#container{
+	background-color: #f4f6ff;
+	font-family: cursive;
+	position: relative;
+	top: 30vh;
+	left: 20%;
+	width: 60%;
+	height: 30vh;
+	border-radius: 50px;
+}
+form{
+	position: relative;
+	top: 20%;
+}
+#result{
+	position: relative;
+	top: 15vh;
+}
+@media(max-width: 800px){
+	#container{
+		width: 80%;
+		position: relative;
+		left: 10%;
+	}
+
+input{
+	font-size: 0.8em;
+	height: 0.8em;
+}
+button{
+	font-size: 0.8em;
+}
+h1{
+	padding-top: 1.5em;
+	font-size: 1.1em;
+}
+
+
+}
